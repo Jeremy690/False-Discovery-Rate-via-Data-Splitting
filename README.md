@@ -77,6 +77,14 @@ Note for the reproduction of Figure 7, you also need to specify the location of 
 Real data results in Section 4.3.
 
 ```
-
+● Directly run the two R files
 ```
+
+Note that the results may look a little bit different to the paper, especially for the knockoff procedures, since both knockoffs and our methods has randomness.
+
+Running time:
+
+The general picture for the running time of the simulation is that for linear models, it takes 2-5 hours depends on the problem while for gaussian graphical model, it takes ten more hours to run.
+
+For real data, you can get the results within 10 minutes.
 
