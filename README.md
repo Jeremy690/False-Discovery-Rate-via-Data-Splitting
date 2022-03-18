@@ -68,6 +68,7 @@ Numeric Simulations in Section 2.3, Section 4,1 and Section 4.2.
 ● Make sure to change the working directory in the R file and the sh file in the corresponding folder. We have pointed out the codes you need to change when you want to produce the figures on your own.
 ● In the sh file, change the mail-user to your own email address. It will automatically inform you whenever your running jobs are done via email.
 ● Run the sh file and the results will appear in the result_left and result_right folder. 
+● The log of the running can be accessed via the file in out folder. You can view them using vim command.
 ● The results are in the .Rdata file form, you can directly load in the results and by calling data_save in the Rstudio, you get the results.
 ● Calculate the mean of the results will lead to each data point in the figure.
 ```
