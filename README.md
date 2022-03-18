@@ -27,4 +27,8 @@ The data is explained in full in the text of Section 4.1 and Section 4.3 of the 
 
 **Abstract**
 
-We have made an R package for our methods, which is available at this git: https://github.com/Jeremy690/DSfdr. The vignetts in the R package contains two easy to run cases to illustrate our methods. In this repo, we include all the code neede to construct every figure in our paper. It consists of three parts. functions folder basically contains the code for our methods and the comparing methods. It also 
+We have made an R package for our methods, which is available at this git: https://github.com/Jeremy690/DSfdr. The vignetts in the R package contains two easy to run cases to illustrate our methods. In this repo, we include all the code neede to construct every figure in our paper. 
+
+**Description**
+
+It consists of three parts, functions, simulation and real_data. functions folder basically contains the code for our methods and the comparing methods. It also contains some utility functions which is used to calculate the fdp and power. The simulation folder contains all the code needed to reproduce the simulations in the main text of the paper. Each folder of the simulation contains the R code and the sh file. The sh file is used to run the simulations in a parallel way via the Odyssey system at Harvard. All scripts used to reproduce the real data analysis are included under the real_data folder.
