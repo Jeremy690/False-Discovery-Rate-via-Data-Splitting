@@ -48,5 +48,4 @@ Code is developed and tested using R 3.6.3. The simulation study is conducted un
 ● ppcor: version 1.1.
 ```
 
-All packages are available through CRAN (https://cran.r-project.org/)and can be installed
-automatically by running **install.packages(PACKAGE_NAME)** inan R session.
+All packages are available through CRAN (https://cran.r-project.org/)and can be installed automatically by running **install.packages(PACKAGE_NAME)** inan R session.
