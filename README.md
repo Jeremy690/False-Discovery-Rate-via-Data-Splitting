@@ -16,7 +16,7 @@ These two datasets are both available online.
 The scRNAseq data is available at
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141834
 
-The drug data is availabel at 
+The drug data is available at 
 http://hivdb.stanford.edu/pages/published_analysis/genophenoPNAS2006/
 
 **Description**
