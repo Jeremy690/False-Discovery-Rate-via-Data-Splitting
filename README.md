@@ -50,7 +50,8 @@ Code is developed and tested using R 3.6.3. The simulation study is conducted un
 
 All packages are available through CRAN (https://cran.r-project.org/)and can be installed automatically by running **install.packages(PACKAGE_NAME)** inan R session.
 
-**Structures of the Code**
+**Structures of the Simulation Folder**
+
 The general structure is provided in the **Descruiption**. For each folder in the simulation, we also include several more folders, they are *out*, *result_()* folders. The results of the code are in the *results_()* folder and the log of the running can be accessed in the *out* folder.
 
 # Instructions for Use
