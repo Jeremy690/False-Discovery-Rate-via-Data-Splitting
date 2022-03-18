@@ -31,4 +31,20 @@ We have made an R package for our methods, which is available at this git: https
 
 **Description**
 
-It consists of three parts, functions, simulation and real_data. functions folder basically contains the code for our methods and the comparing methods. It also contains some utility functions which is used to calculate the fdp and power. The simulation folder contains all the code needed to reproduce the simulations in the main text of the paper. Each folder of the simulation contains the R code and the sh file. The sh file is used to run the simulations in a parallel way via the Odyssey system at Harvard. All scripts used to reproduce the real data analysis are included under the real_data folder.
+The code folder contains all the scripts we used to reproduce the results in the main text of the paper. It consists of three parts, functions, simulation and real_data. The functions folder basically contains the implementation for our methods and the comparing methods. It also contains some utility functions which is used to calculate the fdp and power. The simulation folder contains all the code needed to reproduce the simulations in the main text of the paper. Each folder of the simulation contains the R code and the sh file. The sh file is used to run the simulations in a parallel way via the Odyssey system at Harvard. All scripts used to reproduce the real data analysis are included under the real_data folder.
+
+**Optional Information**
+
+Code is developed and tested using R 3.6.3. The simulation study is conducted under FAS research computing cluster at Harvard (Odyssey system). Current implementation depends on the followingR packages:
+
+```
+● glmnet: version 4.1-1.
+● MASS: version 7.3-51.4.
+● knockoff: version 0.3.3.
+● mvtnorm: version 1.0-11.
+● hdi: version 0.1-7.
+● SILGGM: version 1.0.0
+● breadcrumbs: version 0.1.0.
+● ppcor: version 1.1.
+```
+
