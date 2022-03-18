@@ -49,3 +49,34 @@ Code is developed and tested using R 3.6.3. The simulation study is conducted un
 ```
 
 All packages are available through CRAN (https://cran.r-project.org/)and can be installed automatically by running **install.packages(PACKAGE_NAME)** inan R session.
+
+# Instructions for Use
+
+**Reproducibility**
+
+*What is to be reproduced*
+
+All the figures in the main text of the paper.
+
+*How to reproduce analyses*
+
+Numeric Simulations in Section 2.3, Section 4,1 and Section 4.2.
+
+```
+● Upload the file onto the Harvard Odyssey system.
+● For each figure, open the corresponding folder.
+● Make sure to change the working directory in the R file and the sh file in the corresponding folder. We have pointed out the codes you need to change when you want to produce the figures on your own.
+● In the sh file, change the mail-user to your own email address. It will automatically inform you whenever your running jobs are done via email.
+● Run the sh file and the results will appear in the result_left and result_right folder. 
+● The results are in the .Rdata file form, you can directly load in the results and by calling data_save in the Rstudio, you get the results.
+● Calculate the mean of the results will lead to each data point in the figure.
+```
+
+Note for the reproduction of Figure 7, you also need to specify the location of the data.txt. 
+
+Real data results in Section 4.3.
+
+```
+
+```
+
