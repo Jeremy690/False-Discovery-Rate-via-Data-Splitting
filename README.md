@@ -35,7 +35,7 @@ The code folder contains all the scripts we used to reproduce the results in the
 
 **Optional Information**
 
-Code is developed and tested using R 3.6.3. The simulation study is conducted under FAS research computing cluster at Harvard (Odyssey system). Current implementation depends on the following R packages:
+Code is developed and tested using R 3.6.3. The simulation study is conducted under FAS research computing cluster at Harvard (Odyssey system), which is a Unix system. Current implementation depends on the following R packages:
 
 ```
 ● glmnet: version 4.1-1.
