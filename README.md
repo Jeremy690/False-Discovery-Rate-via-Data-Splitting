@@ -64,10 +64,10 @@ All the figures in the main text of the paper.
 
 *How to reproduce analyses*
 
-Numeric Simulations in Section 2.3, Section 4,1 and Section 4.2.
+Numeric Simulations in Section 2.3, Section 4,1 and Section 4.2. Our sh file can be directly run on the Harvard Odyssey system, you may need to change the sh file if you are using another system.
 
 ```
-● Upload the file onto the Harvard Odyssey system.
+● Upload the file onto a computer system (e.g., Odyssey at Harvard).
 ● For each figure, open the corresponding folder.
 ● Make sure to change the working directory in the R file and the sh file in the corresponding folder. We have pointed out the codes you need to change when you want to produce the figures on your own.
 ● In the sh file, change the mail-user to your own email address. It will automatically inform you whenever your running jobs are done via email.
