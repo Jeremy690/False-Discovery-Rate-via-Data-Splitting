@@ -5,9 +5,9 @@ Reproduce all the figures for the paper False Discovery Rate via Data Splitting
 
 **Abstract**
 
-We use two real data sets in our paper. The first one is the scRNAseq data which contains a total of 400 T47D A1-2 human breast cancer cells. This data contains 400 samples of control group in which the cells are vehicle-treated and 400 samples of treatment group in which the cells are treated with 100 nM synthetic glucocorticoid dexamethasone (Dex). After proper normalization, the final scRNAseq data contains 800 samples, each with 32,049 gene expressions.
+We use two real data sets in our paper. The first one is an scRNAseq data set, which contains expressioons of a total of 400 T47D A1-2 human breast cancer cells. This data set contains 400 samples in the control group, in which the cells are vehicle-treated, and 400 samples in the treatment group, in which the cells are treated with 100 nM synthetic glucocorticoid dexamethasone (Dex). After proper normalization, the final scRNAseq data consist of 800 samples, each with  expressions of 32,049 genes.
 
-The second dataset is used to detect mutations in the Human Immunodeficiency Virus Type 1 (HIV-1) that are associated with drug resistance. It contains resistance measurements of seven drugs for protease inhibitors (PIs), six drugs for nucleoside reverse-transcriptase inhibitors (NRTIs). The response vector y records the log-fold-increase of the lab-tested drug resistance. The design matrix X is binary, in which the j-th column indicates the presence or absence of the j-th mutation.
+The second dataset regards the detection of mutations in the Human Immunodeficiency Virus Type 1 (HIV-1) that are associated with drug resistance. It contains resistance measurements  for seven drugs of protease inhibitors (PIs), six drugs of nucleoside reverse-transcriptase inhibitors (NRTIs). The response vector y records the log-fold-increase of the lab-tested drug resistance. The design matrix X is binary, in which the j-th column indicates the presence or absence of the j-th mutation.
 
 **Availability**
 
@@ -21,21 +21,21 @@ http://hivdb.stanford.edu/pages/published_analysis/genophenoPNAS2006/
 
 **Description**
 
-The data is explained in full in the text of Section 4.1 and Section 4.3 of the manuscript.
+The datasets are explained in full in Section 4.1 and Section 4.3 of the manuscript.
 
 # Code
 
 **Abstract**
 
-We have made an R package for our methods, which is available at this git: https://github.com/Jeremy690/DSfdr. The vignetts in the R package contains two easy to run cases to illustrate our methods. In this repo, we include all the code neede to construct every figure in our paper. 
+We have made an R package for our methods, which is available at this git: https://github.com/Jeremy690/DSfdr. The vignette in the R package contains two easy to run cases to illustrate our methods. In this repo, we include all the code neede to construct every figure in our paper. 
 
 **Description**
 
-The code folder contains all the scripts we used to reproduce the results in the main text of the paper. It consists of three parts, functions, simulation and real_data. The functions folder basically contains the implementation for our methods and the comparing methods. It also contains some utility functions which is used to calculate the fdp and power. The simulation folder contains all the code needed to reproduce the simulations in the main text of the paper. Each folder of the simulation contains the R code and the sh file. The sh file is used to run the simulations in a parallel way via the Odyssey system at Harvard. All scripts used to reproduce the real data analysis are included under the real_data folder.
+The code folder contains all the scripts we used to reproduce the results in the main text of the paper. It consists of three parts: functions, simulations, and real_data. The functions folder contains the implementation of our methods and the methods considered for comparisons. It also contains some utility functions that are used to calculate the fdp and power. The simulation folder contains all the codes needed to reproduce the simulations in the main text of the paper. Each sub-folder of the simulation fold contains the R code and the sh file. The sh file is used to run the simulations in a parallel way via the Odyssey system at Harvard. All scripts used to reproduce the real data analysis are included in the real_data folder.
 
 **Optional Information**
 
-Code is developed and tested using R 3.6.3. The simulation study is conducted under FAS research computing cluster at Harvard (Odyssey system), which is a Unix system. Current implementation depends on the following R packages:
+Code is developed and tested using R_3.6.3. The simulation study is carried out using the FAS research computing cluster at Harvard (Odyssey system). Our current implementation depends on the following R packages:
 
 ```
 ● glmnet: version 4.1-1.
@@ -48,11 +48,11 @@ Code is developed and tested using R 3.6.3. The simulation study is conducted un
 ● ppcor: version 1.1.
 ```
 
-All packages are available through CRAN (https://cran.r-project.org/)and can be installed automatically by running **install.packages(PACKAGE_NAME)** inan R session.
+All packages are available through CRAN (https://cran.r-project.org/)and can be installed automatically by running **install.packages(PACKAGE_NAME)** in an R session.
 
 **Structures of the Simulation Folder**
 
-The general structure is provided in the **Descruiption**. For each folder in the simulation, we also include several more folders, they are *out*, *result_()* folders. The results of the code are in the *results_()* folder and the log of the running can be accessed in the *out* folder.
+The general structure is provided in the **Description**. For each folder in the simulation, we also include several more folders, such as *out* and *results_()*. The results of the code are in the *results_()* folder and the log of the running can be accessed in the *out* folder.
 
 # Instructions for Use
 
@@ -64,7 +64,7 @@ All the figures in the main text of the paper.
 
 *How to reproduce analyses*
 
-Numeric Simulations in Section 2.3, Section 4,1 and Section 4.2. Our sh file can be directly run on the Harvard Odyssey system, you may need to change the sh file if you are using another system.
+Numerical Simulations in Section 2.3, Section 4,1 and Section 4.2.
 
 ```
 ● Upload the file onto a computer system (e.g., Odyssey at Harvard).
@@ -81,14 +81,12 @@ Note for the reproduction of Figure 7, you also need to specify the location of 
 Real data results in Section 4.3.
 
 ```
-● Directly run the two R files in the real_data folder.
+● Directly run the two R files
 ```
 
-Note that the results may look a little bit different to the paper, especially for the knockoff procedures, since both knockoffs and our methods has randomness.
+Note that the results may differ slight from those in the paper, especially for the knockoff procedures, since both knockoffs and our methods involve random sampling and are not deterministic algorithms.
 
 Running time:
 
-The running time of the simulation is that for linear models, it takes 2-5 hours depends on the problem while for gaussian graphical model, it takes ten more hours to run.
-
-For the real data, you can get the results within 10 minutes.
+The running time of the simulations with linear models was around 2-5 hours depending on the problem . For gaussian graphical models, it took more than ten hours to run. For real data, one may get the results within 10 minutes.
 
