@@ -67,7 +67,7 @@ All the figures in the main text of the paper.
 Numerical Simulations in Section 2.3, Section 4,1 and Section 4.2.
 
 ```
-● Upload the file onto a computer system (e.g., Odyssey at Harvard).
+● Upload the file onto a parallel computing system (e.g., Odyssey at Harvard).
 ● For each figure, open the corresponding folder.
 ● Make sure to change the working directory in the R file and the sh file in the corresponding folder. We have pointed out the codes you need to change when you want to produce the figures on your own.
 ● In the sh file, change the mail-user to your own email address. It will automatically inform you whenever your running jobs are done via email.
@@ -84,7 +84,7 @@ Real data results in Section 4.3.
 ● Directly run the two R files
 ```
 
-Note that the results may differ slight from those in the paper, especially for the knockoff procedures, since both knockoffs and our methods involve random sampling and are not deterministic algorithms.
+Note that the results may differ slightly from those in the paper, especially for the knockoff procedures, since both knockoffs and our methods involve random sampling and are not deterministic algorithms.
 
 Running time:
 
